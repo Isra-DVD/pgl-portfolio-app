@@ -1,27 +1,26 @@
 import React from "react";
 import { ScrollView, Text } from "react-native";
-import { styles } from "../styles";
 
-export const FavoritesList = () => {
+export const Hobbies = ({ styles }) => {
   const favoriteItems = [
-    "Salir a pasear",
-    "Senderismo",
+    "Quedar con mis colegas",
+    "Salir a caminar al monte",
     "Ir a la playita",
-    "Domingos de misa",
-    "La guitarrita",
-    "El monte con lluvia",
-    "Viajar",
-    "Música variadita",
-    "Anime",
-    "Ducharme",
-    "Videojuegos",
-    "Ir de cenar romántica",
+    "Sabados de fiesta",
+    "Domingos de resurrección",
+    "Casita y videojuegos",
+    "Viajar pero soy pobre asi que está tenso",
+    "Música variadita pero más tecnusa que otra cosa",
+    "Hacer deporte",
+    "Ducharme muy de vez en cuando (estudio informática)",
+    "Baitybait y AlexelCapso",
+    "Ir de cena romántica con mi antiguo tutor ;);)codocodo",
   ];
 
   return (
     <ScrollView style={styles.scrollContainer}>
       {favoriteItems.map((item, index) => (
-        <Text key={index} style={styles.hobbies}>
+        <Text key={index} style={styles.favoritesItem}>
           {item}
         </Text>
       ))}

@@ -1,13 +1,22 @@
 import React, { useState } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import { ProfileDescription } from "./components/ProfileDescription";
-import { FavoritesList } from "./components/Hobbies";
+import { Hobbies } from "./components/Hobbies";
 import { NavigationButton } from "./components/NavigationButton";
-import { QRCodeDisplay } from "./components/QrCode";
-import { styles } from "./styles";
+import { QrCode } from "./components/QrCode";
+import { ContactInfo } from "./components/ContactInfo"; // Importamos el nuevo componente
+import { stylesLight, stylesDark } from "./styles";
 
 export default function App() {
   const [displayMyQR, setDisplayMyQR] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [showContactInfo, setShowContactInfo] = useState(false); // Nuevo estado para mostrar el contacto
+
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+
+  const styles = isDarkTheme ? stylesDark : stylesLight;
 
   return (
     <View style={styles.container}>
@@ -29,13 +38,29 @@ export default function App() {
 
       {displayMyQR ? (
         <View style={styles.contentContainer}>
-          <ProfileDescription />
+          <ProfileDescription styles={styles} />
+
+          {/* Botón para alternar el tema */}
+          <Button
+            title={
+              isDarkTheme ? "Cambiar a Modo Claro" : "Cambiar a Modo Oscuro"
+            }
+            onPress={toggleTheme}
+          />
+
           <Text style={styles.sectionTitle}>Cosas que me gustan mucho:</Text>
-          <FavoritesList />
+          <Hobbies styles={styles} />
         </View>
       ) : (
-        <QRCodeDisplay />
+        <QrCode styles={styles} />
       )}
+
+      <Button
+        title={showContactInfo ? "Ocultar Contacto" : "Mostrar Contacto"}
+        onPress={() => setShowContactInfo(!showContactInfo)}
+      />
+
+      {showContactInfo && <ContactInfo styles={styles} />}
     </View>
   );
 }

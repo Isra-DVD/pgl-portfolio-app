@@ -1,19 +1,18 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
-import { styles } from "..//styles"; // Importamos los estilos
 
-export const ProfileDescription = () => {
+export const ProfileDescription = ({ styles }) => {
   return (
     <View style={styles.profileContainer}>
       <Image
         style={styles.avatar}
-        source={require("../assets/SofyanAmrabat.jpg")} // Ajusta la ruta de la imagen
+        source={require("../assets/capitanIsra.jpg")}
       />
       <View style={styles.descriptionContainer}>
         <Text style={styles.descriptionTitle}>Descripción sobre mí!</Text>
         <Text style={styles.descriptionText}>
-          Soy profe y me gusta mi trabajo aunque a veces me de por enrevesar
-          prácticas para mis queridos alumnos
+          Me llamo Israel como el estado ilegítimo pero soy mucho más buena
+          onda. Este trabajo es una practica de programación multimedia
         </Text>
       </View>
     </View>
