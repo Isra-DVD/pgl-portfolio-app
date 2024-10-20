@@ -26,4 +26,22 @@ export const styles = StyleSheet.create({
   descriptionText: {
     textAlign: "center",
   },
+  scrollContainer: {
+    paddingHorizontal: 10,
+    marginVertical: 10,
+    width: "100%",
+  },
+  hobbies: {
+    borderColor: "black",
+    borderWidth: 1,
+    borderStyle: "dashed",
+    padding: 10,
+    marginVertical: 5,
+    color: "darkred",
+    textAlign: "center",
+    fontWeight: "bold",
+    fontStyle: "italic",
+    fontSize: 16,
+    backgroundColor: "silver",
+  },
 });
