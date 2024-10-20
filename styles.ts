@@ -44,4 +44,20 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     backgroundColor: "silver",
   },
+  qrContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  primaryButton: {
+    backgroundColor: "blue",
+    padding: 10,
+    borderRadius: 5,
+    marginHorizontal: 5,
+  },
+  buttonText: {
+    color: "white",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+  },
 });
