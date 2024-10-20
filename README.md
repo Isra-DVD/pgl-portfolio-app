@@ -1,7 +1,4 @@
 # pgl-portfolio-app
 
-Por favor, no tengas en cuenta la calidad del código que ves en esta app.
-Es puramente representativa para la modificación posterior por parte de alumnado.
-Me ha costado mucho esfuerzo y trabajo hacerlo tan mal. :)
-
-Hasta gracias y muchas nunca.
+Finalizada la refactorización de la aberración de supuesta aplicación que diseño mi profesor de multimedia con el único proposito de que me quiera arrancar los pelos de lo mal hecha que estaba.
+Espero que este trabajo sea de tu agrada y seas capaz de percibir la cantidad de estrés que me ha generado tu código. Un saludito máquina.
