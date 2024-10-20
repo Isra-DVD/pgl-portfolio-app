@@ -60,4 +60,40 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     textTransform: "uppercase",
   },
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+  },
+  topContainer: {
+    height: "15%",
+    paddingTop: 50,
+    width: "100%",
+    alignItems: "center",
+  },
+  headerTitle: {
+    fontSize: 30,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "gray",
+    width: "100%",
+  },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginVertical: 10,
+  },
+  contentContainer: {
+    flex: 1,
+    width: "100%",
+    alignItems: "center",
+  },
+  sectionTitle: {
+    color: "black",
+    fontWeight: "900",
+    textTransform: "capitalize",
+    fontSize: 20,
+    textAlign: "center",
+  },
 });
